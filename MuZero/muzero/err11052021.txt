@@ -1,0 +1,39 @@
+2021-05-11 10:05:25.260656: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-11 10:05:29.869142: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x2c3c06d97f0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-11 10:05:29.869299: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-11 10:05:29.871295: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2021-05-11 10:05:29.910699: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.392GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-11 10:05:29.910769: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-11 10:05:29.919939: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-11 10:05:29.930055: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-11 10:05:29.933109: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-11 10:05:29.945789: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2021-05-11 10:05:29.951775: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2021-05-11 10:05:29.975393: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-11 10:05:29.975584: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-11 10:05:31.087563: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-11 10:05:31.087622: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-05-11 10:05:31.087646: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2021-05-11 10:05:31.087907: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2988 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2021-05-11 10:05:31.093301: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x2c3f5e52c40 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-11 10:05:31.093348: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 1050 Ti, Compute Capability 6.1
+Traceback (most recent call last):
+  File "Main.py", line 13, in <module>
+    from utils.game_utils import DiscretizeAction
+  File "C:\1\Downloads\GitHub\KGB\Python_ML\muzero\utils\game_utils.py", line 10, in <module>
+    from gym.envs.atari import AtariEnv
+  File "C:\Users\AdeptsCultBaumWelch\anaconda3\lib\site-packages\gym\envs\atari\__init__.py", line 1, in <module>
+    from gym.envs.atari.atari_env import AtariEnv
+  File "C:\Users\AdeptsCultBaumWelch\anaconda3\lib\site-packages\gym\envs\atari\atari_env.py", line 9, in <module>
+    import atari_py
+  File "C:\Users\AdeptsCultBaumWelch\anaconda3\lib\site-packages\atari_py\__init__.py", line 1, in <module>
+    from .ale_python_interface import *
+  File "C:\Users\AdeptsCultBaumWelch\anaconda3\lib\site-packages\atari_py\ale_python_interface.py", line 17, in <module>
+    ale_lib = cdll.LoadLibrary(os.path.join(os.path.dirname(__file__),
+  File "C:\Users\AdeptsCultBaumWelch\anaconda3\lib\ctypes\__init__.py", line 451, in LoadLibrary
+    return self._dlltype(name)
+  File "C:\Users\AdeptsCultBaumWelch\anaconda3\lib\ctypes\__init__.py", line 373, in __init__
+    self._handle = _dlopen(self._name, mode)
+FileNotFoundError: Could not find module 'C:\Users\AdeptsCultBaumWelch\anaconda3\lib\site-packages\atari_py\ale_interface\ale_c.dll' (or one of its dependencies). Try using the full path with constructor syntax.

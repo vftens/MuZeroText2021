@@ -1,0 +1,26 @@
+2021-05-11 10:09:35.064751: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-11 10:09:39.849298: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x276a4e8b5d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-11 10:09:39.849455: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-11 10:09:39.851585: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2021-05-11 10:09:39.889837: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: GeForce GTX 1050 Ti computeCapability: 6.1
+coreClock: 1.392GHz coreCount: 6 deviceMemorySize: 4.00GiB deviceMemoryBandwidth: 104.43GiB/s
+2021-05-11 10:09:39.889894: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2021-05-11 10:09:39.897979: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2021-05-11 10:09:39.907544: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2021-05-11 10:09:39.911253: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2021-05-11 10:09:39.922189: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2021-05-11 10:09:39.927207: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2021-05-11 10:09:39.947065: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2021-05-11 10:09:39.947242: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-05-11 10:09:41.090144: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-11 10:09:41.090210: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-05-11 10:09:41.090234: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2021-05-11 10:09:41.090482: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2988 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1050 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2021-05-11 10:09:41.095325: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x276da6cc9e0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-11 10:09:41.095375: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 1050 Ti, Compute Capability 6.1
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "Main.py", line 176, in <module>
+    debugger.DEBUG_MODE = args.debug
+AttributeError: 'Namespace' object has no attribute 'debug'
